@@ -1,0 +1,61 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 80,
+      "y": 220,
+      "name": "u",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 230,
+      "y": 90,
+      "name": "w",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 380,
+      "y": 220,
+      "name": "v",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    }
+  ],
+  "texts": []
+}

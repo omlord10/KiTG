@@ -1,0 +1,167 @@
+{
+  "x0": 1011.1649867089586,
+  "y0": 241.09211668172654,
+  "vertices": [
+    {
+      "x": -300,
+      "y": 50,
+      "name": "A",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": -200,
+      "y": 50,
+      "name": "B",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": -100,
+      "y": 0,
+      "name": "C",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": -100,
+      "y": 100,
+      "name": "D",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 0,
+      "y": 50,
+      "name": "E",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 100,
+      "y": 50,
+      "name": "F",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 200,
+      "y": 50,
+      "name": "H",
+      "radius": 20,
+      "background": "#ff5722",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#d32f2f"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "6",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "2",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "8",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 1,
+      "weight": "9",
+      "isDirected": false,
+      "controlStep": 8.94427190999916,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 4,
+      "weight": "6",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "7",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "5",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    },
+    {
+      "vertex1": 5,
+      "vertex2": 6,
+      "weight": "2",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#2196f3",
+      "color": "#2196f3"
+    }
+  ],
+  "texts": []
+}

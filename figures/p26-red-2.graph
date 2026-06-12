@@ -1,0 +1,40 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 150,
+      "y": 220,
+      "name": "uv",
+      "radius": 20,
+      "background": "#e1bee7",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 300,
+      "y": 90,
+      "name": "w",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    }
+  ],
+  "texts": []
+}

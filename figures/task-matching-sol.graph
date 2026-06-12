@@ -1,0 +1,124 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": -220,
+      "y": -160,
+      "name": "a",
+      "radius": 20,
+      "background": "#bbdefb",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": -220,
+      "y": 0,
+      "name": "b",
+      "radius": 20,
+      "background": "#bbdefb",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": -220,
+      "y": 160,
+      "name": "c",
+      "radius": 20,
+      "background": "#bbdefb",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": 220,
+      "y": -160,
+      "name": "x",
+      "radius": 20,
+      "background": "#ffe0b2",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#e65100"
+    },
+    {
+      "x": 220,
+      "y": 0,
+      "name": "y",
+      "radius": 20,
+      "background": "#ffe0b2",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#e65100"
+    },
+    {
+      "x": 220,
+      "y": 160,
+      "name": "z",
+      "radius": 20,
+      "background": "#ffe0b2",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#e65100"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 4.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 4.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 4.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    }
+  ],
+  "texts": []
+}

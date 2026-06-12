@@ -1,0 +1,291 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 80,
+      "y": 50,
+      "name": "A",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    },
+    {
+      "x": 330,
+      "y": 50,
+      "name": "B",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    },
+    {
+      "x": 50,
+      "y": 280,
+      "name": "C",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    },
+    {
+      "x": 380,
+      "y": 270,
+      "name": "D",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    },
+    {
+      "x": 200,
+      "y": 400,
+      "name": "E",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#b39ddb",
+      "color": "#b39ddb"
+    }
+  ],
+  "texts": [
+    {
+      "x": 560,
+      "y": 60,
+      "value": "Стек:",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#ffffff"
+    },
+    {
+      "x": 560,
+      "y": 96,
+      "value": "C = 5",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ede7f6",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 560,
+      "y": 132,
+      "value": "E = 4",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ede7f6",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 560,
+      "y": 168,
+      "value": "D = 3",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ede7f6",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 560,
+      "y": 204,
+      "value": "A = 2",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ede7f6",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 560,
+      "y": 240,
+      "value": "B = 1",
+      "width": 110,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ede7f6",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    }
+  ]
+}

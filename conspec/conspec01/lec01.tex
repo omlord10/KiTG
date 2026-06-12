@@ -1,0 +1,151 @@
+\chapter{Лекция 1. Бинарные отношения}
+
+\begin{defn}{Бинарное отношение (через подмножество)}{bin-rel-subset}
+$M \neq \varnothing$. \textbf{Бинарное отношение} $R$ на множестве $M$:
+\[
+  R \subseteq (M \times M).
+\]
+\end{defn}
+
+\begin{defn}{Бинарное отношение (через функцию)}{bin-rel-func}
+$M \neq \varnothing$. Бинарное отношение $f$ на множестве $M$:
+\[
+  f\colon M^2 \to \mathbb{B}, \quad
+  \text{где } 1 \text{ --- принадлежность, } 0 \text{ --- непринадлежность.}
+\]
+Определения~1 и~2 эквивалентны: $f = \mathbb{I}_R$ --- индикаторная функция.
+
+\textbf{Индикаторная функция.}
+Пусть $X$ --- объемлющее множество, $A \subseteq X$. Тогда
+\[
+  \mathbb{I}_A \colon X \to \mathbb{B}, \quad
+  \mathbb{I}_A(x) =
+  \begin{cases}
+    1, & x \in A, \\
+    0, & x \notin A.
+  \end{cases}
+\]
+\end{defn}
+
+\textbf{Примеры} ($M$ --- произвольное непустое множество):
+
+\begin{enumerate}
+  \item $M = \mathbb{R}$,\quad $\forall\, a, b \in M\colon\;
+        f(a,b) = 1 \;\Leftrightarrow\; \{a\} = \{b\}$ (дробная часть).
+
+        Свойства: рефлексивно, симметрично, транзитивно.
+
+  \item $M = M_2(\mathbb{R})$ --- матрицы $2 \times 2$,\quad
+        $\forall\, a, b \in M\colon\;
+        f(a,b) = 1 \;\Leftrightarrow\; \det A = \det B$.
+
+        Свойства: рефлексивно, симметрично, транзитивно.
+
+  \item $M$ --- имена присутствующих,\quad
+        $\forall\, a, b\colon\; f(a,b) = 1 \;\Leftrightarrow\; a \leq b$
+        (лексикографический порядок).
+
+        Свойства: рефлексивно, антисимметрично, транзитивно.
+\end{enumerate}
+
+\medskip
+\textbf{Простейшие свойства бинарных отношений.}
+
+Пусть $M \neq \varnothing$,\; $f\colon M^2 \to \mathbb{B}$ --- б.\,о.
+
+\begin{enumerate}
+  \item $f$ на $M$ --- \textbf{рефлексивное}
+        $\;\Leftrightarrow\; \forall\, a \in M\colon f(a,a) = 1$.
+
+  \item $f$ на $M$ --- \textbf{арефлексивное}
+        $\;\Leftrightarrow\; \forall\, a \in M\colon f(a,a) = 0$.
+
+  \item $f$ на $M$ --- \textbf{симметричное}
+        $\;\Leftrightarrow\; \forall\, a, b \in M\colon f(a,b) = 1 \;\Rightarrow\; f(b,a) = 1$.
+
+  \item $f$ на $M$ --- \textbf{антисимметричное}
+        $\;\Leftrightarrow\; \forall\, a, b \in M\colon
+        \bigl(f(a,b) = 1 \;\wedge\; f(b,a) = 1\bigr) \;\Rightarrow\; a = b$.
+
+  \item $f$ на $M$ --- \textbf{асимметричное}
+        $\;\Leftrightarrow\; \forall\, a, b \in M\colon
+        f(a,b) = 1 \;\Rightarrow\; f(b,a) = 0$.
+
+  \item $f$ на $M$ --- \textbf{транзитивное}
+        $\;\Leftrightarrow\; \forall\, a, b, c \in M\colon
+        \bigl(f(a,b) = 1 \;\wedge\; f(b,c) = 1\bigr) \;\Rightarrow\; f(a,c) = 1$.
+\end{enumerate}
+
+\medskip
+\textit{Упражнение:} привести пример $M$, т.\,ч. не относится к свойствам 3--5
+(не является ни симметричным, ни антисимметричным, ни асимметричным).
+
+% --- Продолжение: пример и матричное представление ---
+
+\bigskip
+\textbf{Пример} (нетранзитивное отношение).
+$M = \{0, 1, 2, \ldots, 20\}$,\; $f\colon M^2 \to \mathbb{B}$,
+\[
+  \forall\, a, b \in M\colon\;
+  f(a,b) = 1 \;\Leftrightarrow\; |a - b| \leq 5.
+\]
+Свойства: рефлексивно, симметрично, \textbf{не транзитивно}
+(контрпример: $f(a,b)=1$, $f(b,c)=1$, но $f(a,c)=0$).
+
+\medskip
+\textit{Далее условимся: $M$ --- дискретное и конечное множество.}
+
+\medskip
+\textbf{Матричное представление бинарного отношения.}
+
+Пусть $M = \{a_1, a_2, \ldots, a_n\}$,\; $f\colon M^2 \to \mathbb{B}$.
+Матрица $A_f$ размера $n \times n$:
+\[
+  a_{ij} = f(a_i, a_j), \quad
+  i \text{ --- строка},\; j \text{ --- столбец}.
+\]
+
+\textbf{Пример.} $M = \{07, 25, 52, 11, 20, 30\}$,\;
+$f(a,b) = 1 \;\Leftrightarrow\; |a - b| \leq 5$.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+$A_f=$\;
+\begin{tabular}{|c||*{6}{c|}}
+\hline
+$f(a,b)$ & \textbf{07} & \textbf{25} & \textbf{52} & \textbf{11} & \textbf{20} & \textbf{30} \\ \hline\hline
+\textbf{07} & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+\textbf{25} & 1 & 1 & 1 & 0 & 0 & 0 \\ \hline
+\textbf{52} & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+\textbf{11} & 1 & 1 & 1 & 1 & 0 & 0 \\ \hline
+\textbf{20} & 1 & 1 & 1 & 0 & 0 & 0 \\ \hline
+\textbf{30} & 1 & 1 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\end{center}
+
+\noindent\small Строка~$i$ --- элемент $a$, столбец~$j$ --- элемент $b$; на пересечении стоит
+$f(a,b)$ (единица, если $|a-b|\leq 5$).\normalsize
+
+\medskip
+\textbf{Свойства б.\,о. через матрицу и граф.}
+
+$G = (V, E)$ --- граф: $V$ --- множество вершин, $E$ --- рёбра (отношения между вершинами).
+
+\begin{itemize}
+  \item \textbf{Р} (рефлексивность): на диагонали матрицы все единицы;
+        в графе --- петли у каждой вершины.
+  \item \textbf{АР} (арефлексивность): на диагонали все нули;
+        в графе --- без петель.
+  \item \textbf{С} (симметричность): $A = A^T$;
+        в графе --- если есть ребро $(a,b)$, то есть и $(b,a)$.
+  \item \textbf{АнтиС} (антисимметричность): $a_{ij} = 1 \;\Rightarrow\; a_{ji} = 0$
+        (при $i \neq j$).
+  \item \textbf{АС} (асимметричность): $a_{ij} = 1 \;\Rightarrow\; a_{ji} = 0$,
+        и $\forall\, i\colon a_{ii} = 0$.
+  \item \textbf{Т} (транзитивность): $(i,j) \in E,\; (j,k) \in E
+        \;\Rightarrow\; (i,k) \in E$.
+\end{itemize}
+
+\textit{Упражнение:} привести пример б.\,о., не удовлетворяющего ни одному свойству.
+
+\textit{Упражнение:} доказать, что асимметричность $\Rightarrow$ арефлексивность.

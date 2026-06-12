@@ -1,0 +1,146 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 0,
+      "y": -300,
+      "name": "A",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": -200,
+      "y": -150,
+      "name": "B",
+      "radius": 20,
+      "background": "#2196f3",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": 200,
+      "y": -150,
+      "name": "C",
+      "radius": 20,
+      "background": "#2196f3",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": -150,
+      "y": 40,
+      "name": "D",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 200,
+      "y": 40,
+      "name": "F",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 0,
+      "y": 230,
+      "name": "E",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    }
+  ],
+  "texts": []
+}

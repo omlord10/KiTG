@@ -1,0 +1,138 @@
+{
+  "x0": 1511.5,
+  "y0": 273.5,
+  "vertices": [
+    {
+      "x": -800,
+      "y": 0,
+      "name": "1",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -900,
+      "y": 200,
+      "name": "2",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -700,
+      "y": 200,
+      "name": "3",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -800,
+      "y": 120,
+      "name": "4",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 0,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "hsl(0,0%,0%)",
+      "color": "#000000"
+    }
+  ],
+  "texts": [
+    {
+      "x": -1140,
+      "y": 100,
+      "value": "Ни эйлеров,",
+      "width": 121,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#ffffff"
+    },
+    {
+      "x": -1140,
+      "y": 130,
+      "value": "ни полуэйлеров",
+      "width": 154,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#ffffff"
+    }
+  ]
+}

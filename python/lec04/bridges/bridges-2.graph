@@ -1,0 +1,146 @@
+{
+  "x0": 1346.5,
+  "y0": 118.5,
+  "vertices": [
+    {
+      "x": -700,
+      "y": 200,
+      "name": "A",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -700,
+      "y": 300,
+      "name": "B",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -600,
+      "y": 300,
+      "name": "C",
+      "radius": 20,
+      "background": "#ff5722",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#d32f2f"
+    },
+    {
+      "x": -500,
+      "y": 200,
+      "name": "D",
+      "radius": 20,
+      "background": "#ff5722",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#d32f2f"
+    },
+    {
+      "x": -400,
+      "y": 200,
+      "name": "E",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": -400,
+      "y": 300,
+      "name": "F",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#e53935",
+      "color": "#e53935"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 5,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 10.815151826269974,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    }
+  ],
+  "texts": []
+}

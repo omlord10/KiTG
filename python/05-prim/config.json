@@ -1,0 +1,5 @@
+{
+  "algorithm": "prim",
+  "start": "S",
+  "name": "5-prim"
+}

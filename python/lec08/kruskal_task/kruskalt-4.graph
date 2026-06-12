@@ -1,0 +1,200 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 0,
+      "y": 110,
+      "name": "A",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 170,
+      "y": 0,
+      "name": "B",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 360,
+      "y": 0,
+      "name": "C",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 170,
+      "y": 230,
+      "name": "D",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 360,
+      "y": 140,
+      "name": "E",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 360,
+      "y": 300,
+      "name": "F",
+      "radius": 20,
+      "background": "#4caf50",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#388e3c"
+    },
+    {
+      "x": 540,
+      "y": 150,
+      "name": "G",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "7",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 3,
+      "weight": "5",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "8",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 3,
+      "weight": "9",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 4,
+      "weight": "7",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "5",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 4,
+      "weight": "15",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 5,
+      "weight": "6",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.5,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "8",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 6,
+      "weight": "9",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    },
+    {
+      "vertex1": 5,
+      "vertex2": 6,
+      "weight": "11",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2.0,
+      "background": "#cccccc",
+      "color": "#cccccc"
+    }
+  ],
+  "texts": []
+}

@@ -1,0 +1,5 @@
+{
+  "algorithm": "dijkstra",
+  "start": "S",
+  "name": "3-dijkstra"
+}

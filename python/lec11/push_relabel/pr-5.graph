@@ -1,0 +1,224 @@
+{
+  "x0": 0,
+  "y0": 0,
+  "vertices": [
+    {
+      "x": 60,
+      "y": 220,
+      "name": "S",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    },
+    {
+      "x": 240,
+      "y": 100,
+      "name": "A",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 240,
+      "y": 340,
+      "name": "B",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 470,
+      "y": 100,
+      "name": "C",
+      "radius": 20,
+      "background": "#bbdefb",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#1565c0"
+    },
+    {
+      "x": 470,
+      "y": 340,
+      "name": "D",
+      "radius": 20,
+      "background": "#ffffff",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#000000"
+    },
+    {
+      "x": 650,
+      "y": 220,
+      "name": "F",
+      "radius": 20,
+      "background": "#fff9c4",
+      "fontSize": 18,
+      "color": "#000000",
+      "border": "#f9a825"
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "3/3",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 2,
+      "weight": "2/2",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 3,
+      "weight": "3/3",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "0/1",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 4,
+      "weight": "2/3",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 3.0,
+      "background": "#4caf50",
+      "color": "#4caf50"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 3,
+      "weight": "0/2",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 5,
+      "weight": "0/2",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "0/3",
+      "isDirected": true,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    }
+  ],
+  "texts": [
+    {
+      "x": 60,
+      "y": 262,
+      "value": "h=6, ε=-5",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 240,
+      "y": 142,
+      "value": "h=1, ε=0",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 240,
+      "y": 382,
+      "value": "h=1, ε=0",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 470,
+      "y": 142,
+      "value": "h=1, ε=3",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 470,
+      "y": 382,
+      "value": "h=0, ε=2",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    },
+    {
+      "x": 650,
+      "y": 262,
+      "value": "h=0, ε=0",
+      "width": 120,
+      "height": 26,
+      "fontSize": 18,
+      "background": "#f3e5f5",
+      "color": "#000000",
+      "border": "#7b1fa2"
+    }
+  ]
+}

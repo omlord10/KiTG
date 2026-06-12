@@ -1,0 +1,6 @@
+{
+  "algorithm": "ford_fulkerson",
+  "source": "S",
+  "sink": "F",
+  "name": "10-ford-fulkerson"
+}

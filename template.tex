@@ -1,0 +1,382 @@
+% =============================================================================
+% template.tex — КиТГ (Комбинаторика и Теория Графов)
+% Лектор: Казакевич В.Г. | Конспект: Котельников
+% =============================================================================
+
+% --- Кодировка и язык ---
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}
+\DeclareUnicodeCharacter{03B6}{\ensuremath{\zeta}}
+\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}
+\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}
+\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}
+\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+% --- Геометрия ---
+\usepackage[margin=1.5cm]{geometry}
+
+% --- Математика ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+% --- Типографика ---
+\usepackage{microtype}
+\usepackage{indentfirst}
+
+% --- Списки ---
+\usepackage{enumitem}
+
+% --- Графика ---
+\usepackage{graphicx}
+\usepackage{needspace}
+
+% --- Единый размер картинок-графов (нормализация) ---
+% \grfig{path} — центрированная картинка стандартной ширины (0.5\textwidth).
+% \grfig[0.7]{path} — задать другую ширину при необходимости.
+\newcounter{grfignum}
+\newcommand{\grfig}[3][0.5]{%
+  \begin{center}%
+  \includegraphics[width=#1\textwidth]{#2}\\[3pt]%
+  \refstepcounter{grfignum}{\small\textit{Рис.~\thegrfignum. #3}}%
+  \end{center}}
+\newcommand{\grcap}[1]{\begin{center}\refstepcounter{grfignum}%
+  {\small\textit{Рис.~\thegrfignum. #1}}\end{center}}
+
+% --- \exhead{Пример 1.} — заголовок примера, который не отрывается от
+%     своего содержимого (рисунка/таблицы) при переносе страниц.
+\newcommand{\exhead}[1]{\par\needspace{12\baselineskip}%
+  \medskip\noindent\textbf{#1}\nopagebreak\hspace{0.33em}\ignorespaces}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% --- Таблицы ---
+\usepackage{booktabs}
+
+% --- TikZ / PGFPlots ---
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta, positioning, calc}
+
+% --- Цвета ---
+\usepackage{xcolor}
+
+% Цвета для окружений
+\definecolor{defngreen}{HTML}{388E3C}
+\definecolor{stmtblue}{HTML}{1565C0}
+\definecolor{lemmablue}{HTML}{1976D2}
+\definecolor{algopurple}{HTML}{7B1FA2}
+\definecolor{taskorange}{HTML}{F57C00}
+\definecolor{proofgray}{HTML}{757575}
+
+% --- tcolorbox ---
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable, skins}
+
+% --- Псевдокод ---
+\usepackage[ruled,vlined,linesnumbered,resetcount]{algorithm2e}
+\SetAlgorithmName{Алгоритм}{Алгоритм}{Список алгоритмов}
+\SetKwInput{KwData}{Вход}
+\SetKwInput{KwResult}{Выход}
+\SetKwIF{If}{ElseIf}{Else}{если}{то}{иначе если}{иначе}{конец условия}
+\SetKwFor{While}{пока}{выполнять}{конец цикла}
+\SetKwFor{For}{для}{выполнять}{конец цикла}
+\SetKwFor{ForEach}{для каждого}{выполнять}{конец цикла}
+\SetKw{Return}{вернуть}
+
+% --- Гиперссылки (ЗАГРУЖАТЬ ПОСЛЕДНИМ из обычных пакетов) ---
+\usepackage[
+  colorlinks=true,
+  linkcolor=stmtblue,
+  citecolor=defngreen,
+  urlcolor=algopurple,
+  bookmarks=true,
+  bookmarksnumbered=true,
+]{hyperref}
+
+% --- cleveref (ПОСЛЕ hyperref!) ---
+\usepackage[russian]{cleveref}
+
+% --- Заголовки ---
+\usepackage{titlesec}
+
+% Форматирование глав и секций — без подписи «Глава N» (показываем только заголовок)
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+
+% =============================================================================
+% СЧЁТЧИКИ — СКВОЗНЫЕ, НЕЗАВИСИМЫЕ (не привязаны к chapter/section)
+% =============================================================================
+\newcounter{defncounter}      % Определения: 1, 2, 3, ...
+\newcounter{thmcounter}       % Теоремы/леммы: 1, 2, 3, ...
+\newcounter{algocounter}      % Алгоритмы: 1, 2, 3, ...
+\newcounter{taskcounter}      % Задачи: 1, 2, 3, ...
+
+
+% =============================================================================
+% ОКРУЖЕНИЯ (tcolorbox)
+% Общее правило: текст внутри всех боксов — ВСЕГДА чёрный (coltext=black)
+% =============================================================================
+
+% --- 1. defn: Определение (зелёная рамка) ---
+% Использование: \begin{defn}{Название}{ключ} ... \end{defn}
+\newtcolorbox{defn}[2]{%
+  enhanced,
+  breakable,
+  colframe=defngreen,
+  colback=white,
+  coltitle=black,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={\refstepcounter{defncounter}Определение~\thedefncounter.\ #1},
+  label={def:#2},
+  boxrule=1.2pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% --- 2. statement: Теорема/Утверждение (синяя рамка) ---
+% Использование: \begin{statement}{Название}{ключ} ... \end{statement}
+\newtcolorbox{statement}[2]{%
+  enhanced,
+  breakable,
+  colframe=stmtblue,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={\refstepcounter{thmcounter}Теорема~\thethmcounter.\ #1},
+  label={thm:#2},
+  boxrule=1.2pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% --- 3. lemma: Лемма (синяя рамка, чуть светлее) ---
+% Использует thmcounter (общий с теоремами!)
+% Использование: \begin{lemma}{Название}{ключ} ... \end{lemma}
+\newtcolorbox{lemma}[2]{%
+  enhanced,
+  breakable,
+  colframe=lemmablue,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={\refstepcounter{thmcounter}Лемма~\thethmcounter.\ #1},
+  label={thm:#2},
+  boxrule=1.2pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% --- 4. algo: Алгоритм (фиолетовая рамка) ---
+% Использование: \begin{algo}{Название}{ключ} ... \end{algo}
+\newtcolorbox{algo}[2]{%
+  enhanced,
+  breakable,
+  colframe=algopurple,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={\refstepcounter{algocounter}Алгоритм~\thealgocounter.\ #1},
+  label={algo:#2},
+  boxrule=1.2pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% --- 5. task: Задача (оранжевая рамка) ---
+% Использование: \begin{task}{Название}{ключ} ... \end{task}
+\newtcolorbox{task}[2]{%
+  enhanced,
+  breakable,
+  colframe=taskorange,
+  colback=white,
+  coltitle=black,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={\refstepcounter{taskcounter}Задача~\thetaskcounter.\ #1},
+  label={task:#2},
+  boxrule=1.2pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% --- 6. proof: Доказательство (обычный чёрный текст, жирный зачин, □ в конце) ---
+\renewenvironment{proof}[1][Доказательство]{%
+  \par\vspace{4pt}%
+  \noindent\textbf{#1.}\ \normalfont\color{black}%
+}{%
+  \hfill$\square$\par\vspace{6pt}%
+}
+
+
+% =============================================================================
+% ОКРУЖЕНИЯ-СБОРНИКИ (для summary_*.tex)
+% =============================================================================
+
+% Робастная ссылка «(см. стр. N)» — пустая, если метка не определена
+% (нужно для отдельных PDF-сборников, где метки оригинала отсутствуют).
+\makeatletter
+\newcommand{\sumpageref}[1]{\@ifundefined{r@#1}{}{ {\normalfont\normalsize(см.~стр.~\hyperref[#1]{\pageref*{#1}})}}}
+\makeatother
+
+% summarydefn — Определение в сборнике (без инкремента счётчика)
+\newtcolorbox{summarydefn}[3]{%
+  enhanced,
+  breakable,
+  colframe=defngreen,
+  colback=white,
+  coltitle=black,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={Определение~#1.\ #2\sumpageref{#3}},
+  boxrule=1pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% summarythm — Теорема/Утверждение в сборнике
+\newtcolorbox{summarythm}[3]{%
+  enhanced,
+  breakable,
+  colframe=stmtblue,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={Теорема~#1.\ #2\sumpageref{#3}},
+  boxrule=1pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% summarylemma — Лемма в сборнике
+\newtcolorbox{summarylemma}[3]{%
+  enhanced,
+  breakable,
+  colframe=lemmablue,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={Лемма~#1.\ #2\sumpageref{#3}},
+  boxrule=1pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% summaryalgo — Алгоритм в сборнике
+\newtcolorbox{summaryalgo}[3]{%
+  enhanced,
+  breakable,
+  colframe=algopurple,
+  colback=white,
+  coltitle=white,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={Алгоритм~#1.\ #2\sumpageref{#3}},
+  boxrule=1pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+% summarytask — Задача в сборнике
+\newtcolorbox{summarytask}[3]{%
+  enhanced,
+  breakable,
+  colframe=taskorange,
+  colback=white,
+  coltitle=black,
+  coltext=black,
+  fonttitle=\bfseries,
+  title={Задача~#1.\ #2\sumpageref{#3}},
+  boxrule=1pt,
+  arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt,
+  before upper={\parindent=1.5em},
+}
+
+
+% =============================================================================
+% КОМАНДЫ ДЛЯ ВСТАВКИ СБОРНИКОВ
+% =============================================================================
+
+\newcommand{\printdefinitionsummary}{%
+  \IfFileExists{summary_defs.tex}{\input{summary_defs.tex}}%
+    {\textit{Сборник определений пока пуст. Запустите make\_summary.py.}}%
+}
+
+\newcommand{\printtheoremsummary}{%
+  \IfFileExists{summary_thms.tex}{\input{summary_thms.tex}}%
+    {\textit{Сборник теорем пока пуст. Запустите make\_summary.py.}}%
+}
+
+\newcommand{\printalgorithmsummary}{%
+  \IfFileExists{summary_algos.tex}{\input{summary_algos.tex}}%
+    {\textit{Сборник алгоритмов пока пуст. Запустите make\_summary.py.}}%
+}
+
+\newcommand{\printtasksummary}{%
+  \IfFileExists{summary_tasks.tex}{\input{summary_tasks.tex}}%
+    {\textit{Сборник задач пока пуст. Запустите make\_summary.py.}}%
+}
+
+
+% =============================================================================
+% УДОБНЫЕ МАКРОСЫ ДЛЯ КиТГ
+% =============================================================================
+
+% Множества и графы
+\newcommand{\V}{\mathcal{V}}         % множество вершин
+\newcommand{\E}{\mathcal{E}}         % множество рёбер
+\providecommand{\G}{}
+\renewcommand{\G}{\mathcal{G}}       % граф
+\newcommand{\A}{\mathcal{A}}         % множество дуг (ориентированный граф)
+
+% Операторы
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\rad}{rad}
+\let\deg\relax
+\DeclareMathOperator{\deg}{deg}
+\DeclareMathOperator{\indeg}{indeg}
+\DeclareMathOperator{\outdeg}{outdeg}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\comp}{comp}
+
+% Комбинаторика
+\newcommand{\cmark}{\ding{51}}       % для чеклистов (нужен pifont)
+\newcommand{\Nset}{\mathbb{N}}
+\newcommand{\Zset}{\mathbb{Z}}
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Qset}{\mathbb{Q}}
+
+% Кратко: множество вершин/рёбер графа G
+\newcommand{\VG}{V(\G)}
+\newcommand{\EG}{E(\G)}
+
+% Делимость (рус. нотация): \vdots — «кратно», \ndiv — «не кратно»
+\providecommand{\ndiv}{\mathrel{\not\vdots}}

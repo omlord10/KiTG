@@ -1,0 +1,74 @@
+% =============================================================================
+% main.tex — КиТГ: Комбинаторика и Теория Графов
+% =============================================================================
+\documentclass[12pt, a4paper]{report}
+
+\input{template.tex}
+
+\begin{document}
+
+% --- Титульная страница ---
+\input{titlepage.tex}
+
+% --- Оглавление ---
+\tableofcontents
+\newpage
+
+% =============================================================================
+% ЛЕКЦИИ
+% =============================================================================
+
+% Раскомментируйте по мере добавления конспектов:
+
+\input{conspec/conspec01/lec01.tex}
+
+\input{conspec/conspec02/lec02.tex}
+
+\input{conspec/conspec03/lec03.tex}
+
+\input{conspec/conspec04/lec04.tex}
+
+\input{conspec/conspec05/lec05.tex}
+
+\input{conspec/conspec06/lec06.tex}
+
+\input{conspec/conspec07/lec07.tex}
+
+\input{conspec/conspec08/lec08.tex}
+
+\input{conspec/conspec09/lec09.tex}
+
+\input{conspec/conspec10/lec10.tex}
+
+\input{conspec/conspec11/lec11.tex}
+
+\input{conspec/conspec12/lec12.tex}
+
+\input{conspec/conspec13/lec13.tex}
+
+\input{conspec/conspec14/lec14.tex}
+
+
+% =============================================================================
+% СБОРНИКИ
+% =============================================================================
+
+\appendix
+
+\chapter*{Все определения}
+\addcontentsline{toc}{chapter}{Все определения}
+\printdefinitionsummary
+
+\chapter*{Все теоремы и утверждения}
+\addcontentsline{toc}{chapter}{Все теоремы и утверждения}
+\printtheoremsummary
+
+\chapter*{Все алгоритмы}
+\addcontentsline{toc}{chapter}{Все алгоритмы}
+\printalgorithmsummary
+
+\chapter*{Все задачи}
+\addcontentsline{toc}{chapter}{Все задачи}
+\printtasksummary
+
+\end{document}

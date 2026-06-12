@@ -1,0 +1,2 @@
+cairosvg>=2.5
+networkx>=2.6

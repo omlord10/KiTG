@@ -1,0 +1,188 @@
+{
+  "vertices": [
+    {
+      "x": 750,
+      "y": 200,
+      "name": "AB",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    },
+    {
+      "x": 900,
+      "y": 350,
+      "name": "BC",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    },
+    {
+      "x": 650,
+      "y": 350,
+      "name": "CA",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    },
+    {
+      "x": 650,
+      "y": 500,
+      "name": "CD",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    },
+    {
+      "x": 1000,
+      "y": 200,
+      "name": "BE",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    },
+    {
+      "x": 850,
+      "y": 500,
+      "name": "DB",
+      "radius": 25,
+      "background": "#ffffff",
+      "color": "#000000",
+      "border": "#000000",
+      "fontSize": 16
+    }
+  ],
+  "edges": [
+    {
+      "vertex1": 0,
+      "vertex2": 1,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 0,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 2,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 4,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 1,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 2,
+      "vertex2": 3,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 3,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    },
+    {
+      "vertex1": 4,
+      "vertex2": 5,
+      "weight": "",
+      "isDirected": false,
+      "controlStep": 0,
+      "fontSize": 18,
+      "lineWidth": 2,
+      "background": "#000000",
+      "color": "#000000"
+    }
+  ],
+  "texts": []
+}

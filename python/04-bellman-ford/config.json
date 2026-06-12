@@ -1,0 +1,5 @@
+{
+  "algorithm": "bellman_ford",
+  "start": "S",
+  "name": "4-bellman-ford"
+}
